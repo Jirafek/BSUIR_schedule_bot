@@ -9,7 +9,7 @@
    Форкните репозиторий BGUIR Schedule Bot на GitHub и клонируйте свою копию на свой локальный компьютер.
 
    ```bash
-   git clone https://github.com/ваш_юзернейм/BSUIR_shedule_bot.git
+   git clone https://github.com/ваш_юзернейм/BSUIR_schedule_bot.git
    ```
    
 2. **Создайте ветку**

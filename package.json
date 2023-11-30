@@ -1,0 +1,19 @@
+{
+  "name": "bsuir-schedule-bot",
+  "version": "1.0.0",
+  "description": "A Telegram bot for convenient access to schedules and more at BGUIR. Safely stores user credentials and provides an open-source solution for easy customization. Export grades to Excel format, receive real-time schedule updates, and enhance your university experience.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Serafim",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-config-airbnb-base": "^15.0.0"
+  },
+  "dependencies": {
+  }
+}

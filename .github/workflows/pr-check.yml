@@ -1,0 +1,19 @@
+name: PR Name Check
+
+on:
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  pr-name-check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check PR name
+      run: |
+        pr_name=$(echo "${{ github.event.pull_request.title }}" | tr '[:upper:]' '[:lower:]')
+        if [[ ! "${pr_name}" =~ ^(feat|fix|del|refactor|docs): [A-Z][a-z]+ ]]; then
+          echo "Invalid PR name. Please follow the pattern: (feat|fix|del|refactor|docs): [A-Z][a-z]+"
+          exit 1
+        fi

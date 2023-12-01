@@ -9,6 +9,8 @@ export const updateChatId = (newChatId) => {
     chatId = newChatId;
 }
 
+let isRetried = false;
+
 export const api = axios.create({
     baseURL: 'https://iis.bsuir.by/api/v1',
     headers: {
@@ -18,7 +20,6 @@ export const api = axios.create({
 
 api.interceptors.request.use(
     async originalConfig => {
-
         let token = '';
         const config = {...originalConfig};
         if (config && config.headers) {
@@ -50,10 +51,14 @@ api.interceptors.response.use(
     async error => {
         const originalRequest = error.config;
 
+        console.log('resp', error.response, error.response.status)
+
         if (
-            !originalRequest._retry
+            error.response && error.response.status >= 401 &&
+            !isRetried
         ) {
-            originalRequest._retry = true;
+            isRetried = true;
+
             try {
 
                 let userData = {
@@ -81,8 +86,8 @@ api.interceptors.response.use(
 
                 updateToken(chatId, tokenValue);
 
-
                 return api.request(originalRequest);
+
             } catch (refreshError) {
                 return Promise.reject(error);
             }

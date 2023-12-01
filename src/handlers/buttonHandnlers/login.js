@@ -1,5 +1,6 @@
 import {deleteMessage} from '../../utils/message.js';
-import {addUser, updateToken} from '../../sql/defaultSQLCommands.js';
+import {addUser, updateToken, updateGroup} from '../../sql/defaultSQLCommands.js';
+import {wrongPasswordMessage, successLogin} from '../../utils/defaultMessages.js';
 import {api} from '../../axios/api.js';
 import cookie from 'cookie';
 
@@ -41,12 +42,12 @@ async function auth(bot, chatId, username, password) {
     const loadingFrames = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏'];
     let currentFrameIndex = 0;
 
-    const loadingMessage = await bot.sendMessage(chatId, 'Загрузка...');
+    const loadingMessage = await bot.sendMessage(chatId, 'Загрузка   ');
 
     function updateLoadingMessage() {
         const frame = loadingFrames[currentFrameIndex];
         currentFrameIndex = (currentFrameIndex + 1) % loadingFrames.length;
-        const newText = `Загрузка... ${frame}`;
+        const newText = `Загрузка    ${frame}`;
 
         bot.editMessageText(newText, {
             chat_id: chatId,
@@ -65,6 +66,7 @@ async function auth(bot, chatId, username, password) {
     }
 
     try {
+
         const response = await api.post('/auth/login', {
             username: username,
             password: password,
@@ -81,10 +83,39 @@ async function auth(bot, chatId, username, password) {
             const tokenValue = parsedCookie.JSESSIONID;
 
             updateToken(chatId, tokenValue);
+            updateGroup(chatId, +response.data.group);
+
+            const studentName = response.data.fio.split(' ')[1];
+
+
+            const EnterButtonsMarkup = {
+                reply_markup: {
+                    inline_keyboard: [
+                        [{text: 'Расписание', callback_data: 'schedule'}, {
+                            text: 'Напоминания',
+                            callback_data: 'reminders'
+                        }],
+                        [{text: 'Отметки', callback_data: 'grades'},],
+                    ],
+                },
+            };
+
+            await bot.sendMessage(chatId, `*${studentName}* ${successLogin}`, {parse_mode: 'Markdown', ...EnterButtonsMarkup})
+
         }
 
     } catch (error) {
         console.info(error);
+
+        const ReloginButtonsMarkup = {
+            reply_markup: {
+                inline_keyboard: [
+                    [{text: 'Повторить', callback_data: 'login_yes'}, {text: 'Выход', callback_data: 'login_no'}],
+                ],
+            },
+        };
+
+        await bot.sendMessage(chatId, wrongPasswordMessage, {parse_mode: 'Markdown', ...ReloginButtonsMarkup});
     } finally {
         clearInterval(loadingInterval);
         await bot.deleteMessage(chatId, loadingMessage.message_id);

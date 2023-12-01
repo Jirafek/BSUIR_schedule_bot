@@ -25,7 +25,8 @@ db.serialize(() => {
       username TEXT,
       salt TEXT,
       hashedPassword TEXT,
-      token TEXT
+      token TEXT,
+      userGroup INTEGER
     )
   `);
 });

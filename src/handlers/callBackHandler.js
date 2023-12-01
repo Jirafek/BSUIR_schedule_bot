@@ -1,4 +1,5 @@
 import {login} from './buttonHandnlers/login.js';
+import {noLogin} from './buttonHandnlers/noLogin.js';
 import {deleteMessage} from '../utils/message.js';
 
 export const callBackHandler = async (bot, query) => {
@@ -10,6 +11,8 @@ export const callBackHandler = async (bot, query) => {
 
     if (data === 'login_yes') {
         await login(bot, message.chat.id);
+    } else if (data === 'login_no') {
+        await noLogin(bot, message.chat.id)
     }
 
 }

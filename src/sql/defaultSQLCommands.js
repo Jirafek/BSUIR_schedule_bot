@@ -87,3 +87,44 @@ export const updateToken = (chatId, newToken) => {
     stmt.run(newToken, chatId);
     stmt.finalize();
 }
+
+export const updateGroup = (chatId, newGroup) => {
+    const stmt = db.prepare('UPDATE users SET userGroup = ? WHERE chatId = ?');
+    stmt.run(newGroup, chatId);
+    stmt.finalize();
+}
+
+export const addNoPasswordUser = async (chatId, userGroup) => {
+    try {
+        const existingUser = await findUserByChatId(chatId);
+
+        if (existingUser && existingUser.token) {
+            return {success: true, message: 'User already exists with a token.'};
+        }
+
+        if (existingUser) {
+            await deleteUserByChatId(chatId);
+        }
+
+        const stmt = db.prepare(`
+            INSERT INTO users (chatId, userGroup) VALUES (?, ?)
+        `);
+
+        await new Promise((resolve, reject) => {
+            stmt.run(chatId, userGroup, (err) => {
+                if (err) {
+                    console.error('Error inserting into database:', err.message);
+                    reject(err);
+                } else {
+                    resolve();
+                }
+            });
+            stmt.finalize();
+        });
+
+    } catch (error) {
+        console.error('Error adding user without password:', error.message);
+        throw error;
+    }
+}
+

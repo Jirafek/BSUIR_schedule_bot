@@ -1,0 +1,2770 @@
+{
+  "startDate": "01.09.2023",
+  "endDate": "28.12.2023",
+  "startExamsDate": "05.01.2024",
+  "endExamsDate": "24.01.2024",
+  "employeeDto": null,
+  "studentGroupDto": {
+    "name": "378101",
+    "facultyId": 20012,
+    "facultyAbbrev": "ИЭФ",
+    "specialityDepartmentEducationFormId": 20651,
+    "specialityName": "Информационные системы и технологии",
+    "specialityAbbrev": "ИСиТ",
+    "course": 1,
+    "id": 24106,
+    "calendarId": "h5ka4c2sr9tln14n3o0eurgvqo@group.calendar.google.com",
+    "educationDegree": 1
+  },
+  "schedules": {
+    "Суббота": [
+      {
+        "auditories": [
+          "322а-5 к."
+        ],
+        "endLessonTime": "10:20",
+        "lessonTypeAbbrev": "ЛР",
+        "note": null,
+        "numSubgroup": 1,
+        "startLessonTime": "09:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ПриСОД",
+        "subjectFullName": "Прикладные системы обработки данных",
+        "weekNumber": [
+          1
+        ],
+        "employees": [
+          {
+            "id": 550452,
+            "firstName": "Кристина",
+            "middleName": "Игоревна",
+            "lastName": "Корбут",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/550452",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "k.korbut@bsuir.by",
+            "urlId": "k-korbut",
+            "calendarId": "ibeta94t9qaq558kfdvcpm8178@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "02.09.2023",
+        "endLessonDate": "23.12.2023",
+        "announcement": false,
+        "split": true
+      },
+      {
+        "auditories": [
+          "322а-5 к."
+        ],
+        "endLessonTime": "11:55",
+        "lessonTypeAbbrev": "ЛР",
+        "note": null,
+        "numSubgroup": 1,
+        "startLessonTime": "10:35",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ПриСОД",
+        "subjectFullName": "Прикладные системы обработки данных",
+        "weekNumber": [
+          1
+        ],
+        "employees": [
+          {
+            "id": 550452,
+            "firstName": "Кристина",
+            "middleName": "Игоревна",
+            "lastName": "Корбут",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/550452",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "k.korbut@bsuir.by",
+            "urlId": "k-korbut",
+            "calendarId": "ibeta94t9qaq558kfdvcpm8178@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "02.09.2023",
+        "endLessonDate": "23.12.2023",
+        "announcement": false,
+        "split": true
+      },
+      {
+        "auditories": [
+          "202-4 к."
+        ],
+        "endLessonTime": "13:00",
+        "lessonTypeAbbrev": "Экзамен",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "09:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ИстБГ",
+        "subjectFullName": "История белорусской государственности",
+        "weekNumber": [
+          3
+        ],
+        "employees": [
+          {
+            "id": 500346,
+            "firstName": "Инна",
+            "middleName": "Валерьевна",
+            "lastName": "Вашкевич",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500346",
+            "degree": "кандидат исторических наук",
+            "degreeAbbrev": "к.и.н.",
+            "rank": "доцент",
+            "email": "innavashkevich@bsuir.by",
+            "urlId": "i-vashkevich",
+            "calendarId": "47g58rubt6fj3vu9gm6volsr6s@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": "06.01.2024",
+        "startLessonDate": null,
+        "endLessonDate": null,
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "203-4 к."
+        ],
+        "endLessonTime": "22:00",
+        "lessonTypeAbbrev": "Экзамен",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "16:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ОКПрог",
+        "subjectFullName": "Основы конструирования программ",
+        "weekNumber": [
+          1
+        ],
+        "employees": [
+          {
+            "id": 501001,
+            "firstName": "Николай",
+            "middleName": "Петрович",
+            "lastName": "Мытник",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/501001",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "n.mytnik@bsuir.by",
+            "urlId": "n-mytnik",
+            "calendarId": "mbjg87cb7i42r71gl0u1dcnccc@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": "20.01.2024",
+        "startLessonDate": null,
+        "endLessonDate": null,
+        "announcement": false,
+        "split": false
+      }
+    ],
+    "Четверг": [
+      {
+        "auditories": [
+          "104-3 к."
+        ],
+        "endLessonTime": "10:20",
+        "lessonTypeAbbrev": "ЛК",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "09:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "МА",
+        "subjectFullName": "Математический анализ",
+        "weekNumber": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "employees": [
+          {
+            "id": 529868,
+            "firstName": "Юлия",
+            "middleName": "Леонидовна",
+            "lastName": "Ратушева",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/529868",
+            "degree": "кандидат физико-математических наук",
+            "degreeAbbrev": "к.ф.-м.н.",
+            "rank": "доцент",
+            "email": "iu.ratusheva@bsuir.by",
+            "urlId": "iu-ratusheva",
+            "calendarId": "n6p3ahanq83969i1e7l3bg8gv0@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "07.09.2023",
+        "endLessonDate": "28.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "104-3 к."
+        ],
+        "endLessonTime": "11:55",
+        "lessonTypeAbbrev": "ЛК",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "10:35",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ОКГ",
+        "subjectFullName": "Основы компьютерной графики",
+        "weekNumber": [
+          2,
+          4
+        ],
+        "employees": [
+          {
+            "id": 524821,
+            "firstName": "Ольга",
+            "middleName": "Николаевна",
+            "lastName": "Кучура",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/524821",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "kuchura@bsuir.by",
+            "urlId": "o-kuchura",
+            "calendarId": "afutanm5jklb37a4slfv1b39pc@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "07.09.2023",
+        "endLessonDate": "28.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "104-3 к."
+        ],
+        "endLessonTime": "11:55",
+        "lessonTypeAbbrev": "ЛК",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "10:35",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "Логика",
+        "subjectFullName": "Логика",
+        "weekNumber": [
+          1,
+          3
+        ],
+        "employees": [
+          {
+            "id": 502179,
+            "firstName": "Сергей",
+            "middleName": "Михайлович",
+            "lastName": "Мащитько",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/502179",
+            "degree": "кандидат философских наук",
+            "degreeAbbrev": "к.ф.н.",
+            "rank": "доцент",
+            "email": null,
+            "urlId": "s-mashchitko",
+            "calendarId": "q7e6d3e2lp6hef4k42c851ppuc@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "14.09.2023",
+        "endLessonDate": "21.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "513-2 к."
+        ],
+        "endLessonTime": "13:45",
+        "lessonTypeAbbrev": "ЛР",
+        "note": null,
+        "numSubgroup": 2,
+        "startLessonTime": "12:25",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ОКГ",
+        "subjectFullName": "Основы компьютерной графики",
+        "weekNumber": [
+          2,
+          4
+        ],
+        "employees": [
+          {
+            "id": 546343,
+            "firstName": "Виктория",
+            "middleName": "Алексеевна",
+            "lastName": "Никитина",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/546343",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "v.nikitina@bsuir.by",
+            "urlId": "v-nikitina",
+            "calendarId": "evhb4heb0frjnq3v2i53dgsmb4@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "07.09.2023",
+        "endLessonDate": "28.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "506-2 к."
+        ],
+        "endLessonTime": "13:45",
+        "lessonTypeAbbrev": "ЛР",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "12:25",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ОКГ",
+        "subjectFullName": "Основы компьютерной графики",
+        "weekNumber": [
+          1,
+          3
+        ],
+        "employees": [
+          {
+            "id": 546343,
+            "firstName": "Виктория",
+            "middleName": "Алексеевна",
+            "lastName": "Никитина",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/546343",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "v.nikitina@bsuir.by",
+            "urlId": "v-nikitina",
+            "calendarId": "evhb4heb0frjnq3v2i53dgsmb4@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "14.09.2023",
+        "endLessonDate": "21.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "507-2 к."
+        ],
+        "endLessonTime": "15:20",
+        "lessonTypeAbbrev": "ЛР",
+        "note": null,
+        "numSubgroup": 1,
+        "startLessonTime": "14:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ОКГ",
+        "subjectFullName": "Основы компьютерной графики",
+        "weekNumber": [
+          1,
+          3
+        ],
+        "employees": [
+          {
+            "id": 546343,
+            "firstName": "Виктория",
+            "middleName": "Алексеевна",
+            "lastName": "Никитина",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/546343",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "v.nikitina@bsuir.by",
+            "urlId": "v-nikitina",
+            "calendarId": "evhb4heb0frjnq3v2i53dgsmb4@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "14.09.2023",
+        "endLessonDate": "21.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "213-5 к."
+        ],
+        "endLessonTime": "15:00",
+        "lessonTypeAbbrev": "Консультация",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "14:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ПриСОД",
+        "subjectFullName": "Прикладные системы обработки данных",
+        "weekNumber": [
+          4
+        ],
+        "employees": [
+          {
+            "id": 505752,
+            "firstName": "Ольга",
+            "middleName": "Михайловна",
+            "lastName": "Раптунович",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/505752",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "raptunovich@bsuir.by",
+            "urlId": "o-raptunovich",
+            "calendarId": "pmr72jtu4cmeh0bnv5b5tldlrk@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": "11.01.2024",
+        "startLessonDate": null,
+        "endLessonDate": null,
+        "announcement": false,
+        "split": false
+      }
+    ],
+    "Пятница": [
+      {
+        "auditories": [
+          "202-4 к."
+        ],
+        "endLessonTime": "10:20",
+        "lessonTypeAbbrev": "ПЗ",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "09:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ИстБГ",
+        "subjectFullName": "История белорусской государственности",
+        "weekNumber": [
+          1,
+          3
+        ],
+        "employees": [
+          {
+            "id": 500345,
+            "firstName": "Евгений",
+            "middleName": "Александрович",
+            "lastName": "Борисов",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500345",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "borisov@bsuir.by",
+            "urlId": "e-borisov",
+            "calendarId": "qn8357e4lpovtntres1gc21ub0@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "01.09.2023",
+        "endLessonDate": "22.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "223-5 к."
+        ],
+        "endLessonTime": "10:20",
+        "lessonTypeAbbrev": "ЛР",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "09:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ОКПрог",
+        "subjectFullName": "Основы конструирования программ",
+        "weekNumber": [
+          2
+        ],
+        "employees": [
+          {
+            "id": 501001,
+            "firstName": "Николай",
+            "middleName": "Петрович",
+            "lastName": "Мытник",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/501001",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "n.mytnik@bsuir.by",
+            "urlId": "n-mytnik",
+            "calendarId": "mbjg87cb7i42r71gl0u1dcnccc@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "08.09.2023",
+        "endLessonDate": "01.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "223-5 к."
+        ],
+        "endLessonTime": "10:20",
+        "lessonTypeAbbrev": "ЛР",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "09:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ПриСОД",
+        "subjectFullName": "Прикладные системы обработки данных",
+        "weekNumber": [
+          4
+        ],
+        "employees": [
+          {
+            "id": 550452,
+            "firstName": "Кристина",
+            "middleName": "Игоревна",
+            "lastName": "Корбут",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/550452",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "k.korbut@bsuir.by",
+            "urlId": "k-korbut",
+            "calendarId": "ibeta94t9qaq558kfdvcpm8178@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "22.09.2023",
+        "endLessonDate": "15.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [],
+        "endLessonTime": "11:55",
+        "lessonTypeAbbrev": "ПЗ",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "10:35",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ФизК",
+        "subjectFullName": "Физическая культура",
+        "weekNumber": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "employees": [],
+        "dateLesson": null,
+        "startLessonDate": "01.09.2023",
+        "endLessonDate": "22.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "314-4 к."
+        ],
+        "endLessonTime": "13:45",
+        "lessonTypeAbbrev": "ПЗ",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "12:25",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ЛАиАГ",
+        "subjectFullName": "Линейная алгебра и аналитическая геометрия",
+        "weekNumber": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "employees": [
+          {
+            "id": 500667,
+            "firstName": "Андрей",
+            "middleName": "Николаевич",
+            "lastName": "Семеняко",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500667",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "semenyako@bsuir.by",
+            "urlId": "a-semeniako",
+            "calendarId": "g1mnj3qk4ftkm1q6o9eatlrn3c@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "01.09.2023",
+        "endLessonDate": "22.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "400-4 к."
+        ],
+        "endLessonTime": "15:20",
+        "lessonTypeAbbrev": "ПЗ",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "14:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ИнЯз",
+        "subjectFullName": "Иностранный язык",
+        "weekNumber": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "employees": [
+          {
+            "id": 501025,
+            "firstName": "Татьяна",
+            "middleName": "Владимировна",
+            "lastName": "Булавская",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/501025",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "t.bulavskaya@bsuir.by",
+            "urlId": "t-bulavskaia",
+            "calendarId": "g0g21pe3dlquueej6dqjii0h28@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "01.09.2023",
+        "endLessonDate": "22.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "516-4 к."
+        ],
+        "endLessonTime": "15:20",
+        "lessonTypeAbbrev": "ПЗ",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "14:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ИнЯз",
+        "subjectFullName": "Иностранный язык",
+        "weekNumber": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "employees": [
+          {
+            "id": 500228,
+            "firstName": "Любовь",
+            "middleName": "Фёдоровна",
+            "lastName": "Мурзич",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500228",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "l.mirzich@bsuir.by",
+            "urlId": "l-murzich",
+            "calendarId": "i45sagd6m89uo4lcomp4c2ut0c@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "01.09.2023",
+        "endLessonDate": "22.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "202-4 к."
+        ],
+        "endLessonTime": "15:00",
+        "lessonTypeAbbrev": "Консультация",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "14:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ИстБГ",
+        "subjectFullName": "История белорусской государственности",
+        "weekNumber": [
+          3
+        ],
+        "employees": [
+          {
+            "id": 500346,
+            "firstName": "Инна",
+            "middleName": "Валерьевна",
+            "lastName": "Вашкевич",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500346",
+            "degree": "кандидат исторических наук",
+            "degreeAbbrev": "к.и.н.",
+            "rank": "доцент",
+            "email": "innavashkevich@bsuir.by",
+            "urlId": "i-vashkevich",
+            "calendarId": "47g58rubt6fj3vu9gm6volsr6s@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": "05.01.2024",
+        "startLessonDate": null,
+        "endLessonDate": null,
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "213-5 к."
+        ],
+        "endLessonTime": "14:00",
+        "lessonTypeAbbrev": "Экзамен",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "09:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ПриСОД",
+        "subjectFullName": "Прикладные системы обработки данных",
+        "weekNumber": [
+          4
+        ],
+        "employees": [
+          {
+            "id": 505752,
+            "firstName": "Ольга",
+            "middleName": "Михайловна",
+            "lastName": "Раптунович",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/505752",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "raptunovich@bsuir.by",
+            "urlId": "o-raptunovich",
+            "calendarId": "pmr72jtu4cmeh0bnv5b5tldlrk@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": "12.01.2024",
+        "startLessonDate": null,
+        "endLessonDate": null,
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "203-4 к."
+        ],
+        "endLessonTime": "16:00",
+        "lessonTypeAbbrev": "Консультация",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "15:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ОКПрог",
+        "subjectFullName": "Основы конструирования программ",
+        "weekNumber": [
+          1
+        ],
+        "employees": [
+          {
+            "id": 501001,
+            "firstName": "Николай",
+            "middleName": "Петрович",
+            "lastName": "Мытник",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/501001",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "n.mytnik@bsuir.by",
+            "urlId": "n-mytnik",
+            "calendarId": "mbjg87cb7i42r71gl0u1dcnccc@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": "19.01.2024",
+        "startLessonDate": null,
+        "endLessonDate": null,
+        "announcement": false,
+        "split": false
+      }
+    ],
+    "Вторник": [
+      {
+        "auditories": [
+          "506-4 к."
+        ],
+        "endLessonTime": "10:20",
+        "lessonTypeAbbrev": "ЛР",
+        "note": "с октября",
+        "numSubgroup": 2,
+        "startLessonTime": "09:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "Физика",
+        "subjectFullName": "Физика",
+        "weekNumber": [
+          3
+        ],
+        "employees": [
+          {
+            "id": 500710,
+            "firstName": "Галина",
+            "middleName": "Федоровна",
+            "lastName": "Смирнова",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500710",
+            "degree": "кандидат физико-математических наук",
+            "degreeAbbrev": "к.ф.-м.н.",
+            "rank": "доцент",
+            "email": "smirnova@bsuir.by",
+            "urlId": "g-smirnova",
+            "calendarId": "o2hfofo0ohb8h9km3lg3k63500@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "12.09.2023",
+        "endLessonDate": "05.12.2023",
+        "announcement": false,
+        "split": true
+      },
+      {
+        "auditories": [
+          "506-4 к."
+        ],
+        "endLessonTime": "10:20",
+        "lessonTypeAbbrev": "ЛР",
+        "note": "с октября",
+        "numSubgroup": 1,
+        "startLessonTime": "09:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "Физика",
+        "subjectFullName": "Физика",
+        "weekNumber": [
+          1
+        ],
+        "employees": [
+          {
+            "id": 500710,
+            "firstName": "Галина",
+            "middleName": "Федоровна",
+            "lastName": "Смирнова",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500710",
+            "degree": "кандидат физико-математических наук",
+            "degreeAbbrev": "к.ф.-м.н.",
+            "rank": "доцент",
+            "email": "smirnova@bsuir.by",
+            "urlId": "g-smirnova",
+            "calendarId": "o2hfofo0ohb8h9km3lg3k63500@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "26.09.2023",
+        "endLessonDate": "19.12.2023",
+        "announcement": false,
+        "split": true
+      },
+      {
+        "auditories": [
+          "106-4 к."
+        ],
+        "endLessonTime": "11:55",
+        "lessonTypeAbbrev": "ЛК",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "10:35",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "Физика",
+        "subjectFullName": "Физика",
+        "weekNumber": [
+          2,
+          4
+        ],
+        "employees": [
+          {
+            "id": 500710,
+            "firstName": "Галина",
+            "middleName": "Федоровна",
+            "lastName": "Смирнова",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500710",
+            "degree": "кандидат физико-математических наук",
+            "degreeAbbrev": "к.ф.-м.н.",
+            "rank": "доцент",
+            "email": "smirnova@bsuir.by",
+            "urlId": "g-smirnova",
+            "calendarId": "o2hfofo0ohb8h9km3lg3k63500@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "05.09.2023",
+        "endLessonDate": "26.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "223-5 к."
+        ],
+        "endLessonTime": "11:55",
+        "lessonTypeAbbrev": "ЛР",
+        "note": null,
+        "numSubgroup": 1,
+        "startLessonTime": "10:35",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ОКПрог",
+        "subjectFullName": "Основы конструирования программ",
+        "weekNumber": [
+          3
+        ],
+        "employees": [
+          {
+            "id": 501001,
+            "firstName": "Николай",
+            "middleName": "Петрович",
+            "lastName": "Мытник",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/501001",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "n.mytnik@bsuir.by",
+            "urlId": "n-mytnik",
+            "calendarId": "mbjg87cb7i42r71gl0u1dcnccc@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "12.09.2023",
+        "endLessonDate": "05.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "506-4 к."
+        ],
+        "endLessonTime": "11:55",
+        "lessonTypeAbbrev": "ЛР",
+        "note": "с октября",
+        "numSubgroup": 2,
+        "startLessonTime": "10:35",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "Физика",
+        "subjectFullName": "Физика",
+        "weekNumber": [
+          3
+        ],
+        "employees": [
+          {
+            "id": 500710,
+            "firstName": "Галина",
+            "middleName": "Федоровна",
+            "lastName": "Смирнова",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500710",
+            "degree": "кандидат физико-математических наук",
+            "degreeAbbrev": "к.ф.-м.н.",
+            "rank": "доцент",
+            "email": "smirnova@bsuir.by",
+            "urlId": "g-smirnova",
+            "calendarId": "o2hfofo0ohb8h9km3lg3k63500@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "12.09.2023",
+        "endLessonDate": "05.12.2023",
+        "announcement": false,
+        "split": true
+      },
+      {
+        "auditories": [
+          "223-5 к."
+        ],
+        "endLessonTime": "11:55",
+        "lessonTypeAbbrev": "ЛР",
+        "note": null,
+        "numSubgroup": 2,
+        "startLessonTime": "10:35",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ОКПрог",
+        "subjectFullName": "Основы конструирования программ",
+        "weekNumber": [
+          1
+        ],
+        "employees": [
+          {
+            "id": 501001,
+            "firstName": "Николай",
+            "middleName": "Петрович",
+            "lastName": "Мытник",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/501001",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "n.mytnik@bsuir.by",
+            "urlId": "n-mytnik",
+            "calendarId": "mbjg87cb7i42r71gl0u1dcnccc@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "26.09.2023",
+        "endLessonDate": "19.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "506-4 к."
+        ],
+        "endLessonTime": "11:55",
+        "lessonTypeAbbrev": "ЛР",
+        "note": "с октября",
+        "numSubgroup": 1,
+        "startLessonTime": "10:35",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "Физика",
+        "subjectFullName": "Физика",
+        "weekNumber": [
+          1
+        ],
+        "employees": [
+          {
+            "id": 500710,
+            "firstName": "Галина",
+            "middleName": "Федоровна",
+            "lastName": "Смирнова",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500710",
+            "degree": "кандидат физико-математических наук",
+            "degreeAbbrev": "к.ф.-м.н.",
+            "rank": "доцент",
+            "email": "smirnova@bsuir.by",
+            "urlId": "g-smirnova",
+            "calendarId": "o2hfofo0ohb8h9km3lg3k63500@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "26.09.2023",
+        "endLessonDate": "19.12.2023",
+        "announcement": false,
+        "split": true
+      },
+      {
+        "auditories": [],
+        "endLessonTime": "13:45",
+        "lessonTypeAbbrev": "ПЗ",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "12:25",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ФизК",
+        "subjectFullName": "Физическая культура",
+        "weekNumber": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "employees": [],
+        "dateLesson": null,
+        "startLessonDate": "05.09.2023",
+        "endLessonDate": "26.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "427-4 к."
+        ],
+        "endLessonTime": "15:20",
+        "lessonTypeAbbrev": "ПЗ",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "14:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ОКПрог",
+        "subjectFullName": "Основы конструирования программ",
+        "weekNumber": [
+          2,
+          3,
+          4
+        ],
+        "employees": [
+          {
+            "id": 501001,
+            "firstName": "Николай",
+            "middleName": "Петрович",
+            "lastName": "Мытник",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/501001",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "n.mytnik@bsuir.by",
+            "urlId": "n-mytnik",
+            "calendarId": "mbjg87cb7i42r71gl0u1dcnccc@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "05.09.2023",
+        "endLessonDate": "26.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "318-5 к."
+        ],
+        "endLessonTime": "17:10",
+        "lessonTypeAbbrev": "ЛР",
+        "note": null,
+        "numSubgroup": 2,
+        "startLessonTime": "15:50",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ОАиП",
+        "subjectFullName": "Основы алгоритмизации и программирования",
+        "weekNumber": [
+          2,
+          4
+        ],
+        "employees": [
+          {
+            "id": 500986,
+            "firstName": "Алексей",
+            "middleName": "Александрович",
+            "lastName": "Бутов",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500986",
+            "degree": "кандидат технических наук",
+            "degreeAbbrev": "к.т.н.",
+            "rank": "доцент",
+            "email": "butov@bsuir.by",
+            "urlId": "a-butov",
+            "calendarId": "ekp50r2skqr5i6shrrg3ngkof0@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "05.09.2023",
+        "endLessonDate": "26.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "321-4 к."
+        ],
+        "endLessonTime": "14:00",
+        "lessonTypeAbbrev": "Экзамен",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "09:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ЛАиАГ",
+        "subjectFullName": "Линейная алгебра и аналитическая геометрия",
+        "weekNumber": [
+          1
+        ],
+        "employees": [
+          {
+            "id": 500645,
+            "firstName": "Людмила",
+            "middleName": "Павловна",
+            "lastName": "Князева",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500645",
+            "degree": "кандидат физико-математических наук",
+            "degreeAbbrev": "к.ф.-м.н.",
+            "rank": "доцент",
+            "email": "knyazeva@bsuir.by",
+            "urlId": "l-kniazeva",
+            "calendarId": "t650vqrb8r5g77iqah94i8r04s@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": "16.01.2024",
+        "startLessonDate": null,
+        "endLessonDate": null,
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "223-5 к."
+        ],
+        "endLessonTime": "16:00",
+        "lessonTypeAbbrev": "Консультация",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "15:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ОАиП",
+        "subjectFullName": "Основы алгоритмизации и программирования",
+        "weekNumber": [
+          2
+        ],
+        "employees": [
+          {
+            "id": 500995,
+            "firstName": "Наталья",
+            "middleName": "Алексеевна",
+            "lastName": "Кириенко",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500995",
+            "degree": "кандидат технических наук",
+            "degreeAbbrev": "к.т.н.",
+            "rank": "доцент",
+            "email": null,
+            "urlId": "n-kirienko",
+            "calendarId": "ill3pg5oibslem59786h40sbj4@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": "23.01.2024",
+        "startLessonDate": null,
+        "endLessonDate": null,
+        "announcement": false,
+        "split": false
+      }
+    ],
+    "Понедельник": [
+      {
+        "auditories": [
+          "401-4 к."
+        ],
+        "endLessonTime": "10:20",
+        "lessonTypeAbbrev": "ПЗ",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "09:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ИнЯз",
+        "subjectFullName": "Иностранный язык",
+        "weekNumber": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "employees": [
+          {
+            "id": 501025,
+            "firstName": "Татьяна",
+            "middleName": "Владимировна",
+            "lastName": "Булавская",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/501025",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "t.bulavskaya@bsuir.by",
+            "urlId": "t-bulavskaia",
+            "calendarId": "g0g21pe3dlquueej6dqjii0h28@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "04.09.2023",
+        "endLessonDate": "25.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "409-5 к."
+        ],
+        "endLessonTime": "10:20",
+        "lessonTypeAbbrev": "ПЗ",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "09:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ИнЯз",
+        "subjectFullName": "Иностранный язык",
+        "weekNumber": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "employees": [
+          {
+            "id": 500228,
+            "firstName": "Любовь",
+            "middleName": "Фёдоровна",
+            "lastName": "Мурзич",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500228",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "l.mirzich@bsuir.by",
+            "urlId": "l-murzich",
+            "calendarId": "i45sagd6m89uo4lcomp4c2ut0c@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "04.09.2023",
+        "endLessonDate": "25.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "509-4 к."
+        ],
+        "endLessonTime": "11:55",
+        "lessonTypeAbbrev": "ПЗ",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "10:35",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "Физика",
+        "subjectFullName": "Физика",
+        "weekNumber": [
+          2
+        ],
+        "employees": [
+          {
+            "id": 500710,
+            "firstName": "Галина",
+            "middleName": "Федоровна",
+            "lastName": "Смирнова",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500710",
+            "degree": "кандидат физико-математических наук",
+            "degreeAbbrev": "к.ф.-м.н.",
+            "rank": "доцент",
+            "email": "smirnova@bsuir.by",
+            "urlId": "g-smirnova",
+            "calendarId": "o2hfofo0ohb8h9km3lg3k63500@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "04.09.2023",
+        "endLessonDate": "25.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "301-4 к."
+        ],
+        "endLessonTime": "11:55",
+        "lessonTypeAbbrev": "ПЗ",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "10:35",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "Логика",
+        "subjectFullName": "Логика",
+        "weekNumber": [
+          1,
+          3
+        ],
+        "employees": [
+          {
+            "id": 536079,
+            "firstName": "Сергей",
+            "middleName": "Александрович",
+            "lastName": "Амоненко",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/536079",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": null,
+            "urlId": "s-amonenko",
+            "calendarId": "31tvc43pplslblt2lhgc04tobs@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "11.09.2023",
+        "endLessonDate": "18.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "427-4 к."
+        ],
+        "endLessonTime": "11:55",
+        "lessonTypeAbbrev": "ПЗ",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "10:35",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ИстБГ",
+        "subjectFullName": "История белорусской государственности",
+        "weekNumber": [
+          4
+        ],
+        "employees": [
+          {
+            "id": 500345,
+            "firstName": "Евгений",
+            "middleName": "Александрович",
+            "lastName": "Борисов",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500345",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "borisov@bsuir.by",
+            "urlId": "e-borisov",
+            "calendarId": "qn8357e4lpovtntres1gc21ub0@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "18.09.2023",
+        "endLessonDate": "11.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "106-4 к."
+        ],
+        "endLessonTime": "13:45",
+        "lessonTypeAbbrev": "ЛК",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "12:25",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ПриСОД",
+        "subjectFullName": "Прикладные системы обработки данных",
+        "weekNumber": [
+          1,
+          2,
+          3
+        ],
+        "employees": [
+          {
+            "id": 505752,
+            "firstName": "Ольга",
+            "middleName": "Михайловна",
+            "lastName": "Раптунович",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/505752",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "raptunovich@bsuir.by",
+            "urlId": "o-raptunovich",
+            "calendarId": "pmr72jtu4cmeh0bnv5b5tldlrk@group.calendar.google.com",
+            "jobPositions": null
+          },
+          {
+            "id": 530302,
+            "firstName": "Андрей",
+            "middleName": "Александрович",
+            "lastName": "Ефремов",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/530302",
+            "degree": "кандидат экономических наук",
+            "degreeAbbrev": "к.э.н.",
+            "rank": "доцент",
+            "email": "efremov@bsuir.by",
+            "urlId": "a-efremov",
+            "calendarId": "q60pekhu2spdo097pam7ckdehc@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "04.09.2023",
+        "endLessonDate": "25.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "106-4 к."
+        ],
+        "endLessonTime": "13:45",
+        "lessonTypeAbbrev": "ЛК",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "12:25",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ОКПрог",
+        "subjectFullName": "Основы конструирования программ",
+        "weekNumber": [
+          4
+        ],
+        "employees": [
+          {
+            "id": 501001,
+            "firstName": "Николай",
+            "middleName": "Петрович",
+            "lastName": "Мытник",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/501001",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "n.mytnik@bsuir.by",
+            "urlId": "n-mytnik",
+            "calendarId": "mbjg87cb7i42r71gl0u1dcnccc@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "18.09.2023",
+        "endLessonDate": "11.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "106-4 к."
+        ],
+        "endLessonTime": "15:20",
+        "lessonTypeAbbrev": "ЛК",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "14:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ИстБГ",
+        "subjectFullName": "История белорусской государственности",
+        "weekNumber": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "employees": [
+          {
+            "id": 500346,
+            "firstName": "Инна",
+            "middleName": "Валерьевна",
+            "lastName": "Вашкевич",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500346",
+            "degree": "кандидат исторических наук",
+            "degreeAbbrev": "к.и.н.",
+            "rank": "доцент",
+            "email": "innavashkevich@bsuir.by",
+            "urlId": "i-vashkevich",
+            "calendarId": "47g58rubt6fj3vu9gm6volsr6s@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "04.09.2023",
+        "endLessonDate": "25.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "321-4 к."
+        ],
+        "endLessonTime": "15:00",
+        "lessonTypeAbbrev": "Консультация",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "14:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ЛАиАГ",
+        "subjectFullName": "Линейная алгебра и аналитическая геометрия",
+        "weekNumber": [
+          1
+        ],
+        "employees": [
+          {
+            "id": 500645,
+            "firstName": "Людмила",
+            "middleName": "Павловна",
+            "lastName": "Князева",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500645",
+            "degree": "кандидат физико-математических наук",
+            "degreeAbbrev": "к.ф.-м.н.",
+            "rank": "доцент",
+            "email": "knyazeva@bsuir.by",
+            "urlId": "l-kniazeva",
+            "calendarId": "t650vqrb8r5g77iqah94i8r04s@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": "15.01.2024",
+        "startLessonDate": null,
+        "endLessonDate": null,
+        "announcement": false,
+        "split": false
+      }
+    ],
+    "Среда": [
+      {
+        "auditories": [
+          "712-5 к."
+        ],
+        "endLessonTime": "10:20",
+        "lessonTypeAbbrev": "ЛК",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "09:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ОАиП",
+        "subjectFullName": "Основы алгоритмизации и программирования",
+        "weekNumber": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "employees": [
+          {
+            "id": 500995,
+            "firstName": "Наталья",
+            "middleName": "Алексеевна",
+            "lastName": "Кириенко",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500995",
+            "degree": "кандидат технических наук",
+            "degreeAbbrev": "к.т.н.",
+            "rank": "доцент",
+            "email": null,
+            "urlId": "n-kirienko",
+            "calendarId": "ill3pg5oibslem59786h40sbj4@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "06.09.2023",
+        "endLessonDate": "27.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "712-5 к."
+        ],
+        "endLessonTime": "11:55",
+        "lessonTypeAbbrev": "ЛК",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "10:35",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ЛАиАГ",
+        "subjectFullName": "Линейная алгебра и аналитическая геометрия",
+        "weekNumber": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "employees": [
+          {
+            "id": 500645,
+            "firstName": "Людмила",
+            "middleName": "Павловна",
+            "lastName": "Князева",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500645",
+            "degree": "кандидат физико-математических наук",
+            "degreeAbbrev": "к.ф.-м.н.",
+            "rank": "доцент",
+            "email": "knyazeva@bsuir.by",
+            "urlId": "l-kniazeva",
+            "calendarId": "t650vqrb8r5g77iqah94i8r04s@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "06.09.2023",
+        "endLessonDate": "27.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "314-4 к."
+        ],
+        "endLessonTime": "13:45",
+        "lessonTypeAbbrev": "ПЗ",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "12:25",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "МА",
+        "subjectFullName": "Математический анализ",
+        "weekNumber": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "employees": [
+          {
+            "id": 500636,
+            "firstName": "Людмила",
+            "middleName": "Ивановна",
+            "lastName": "Василюк",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500636",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": null,
+            "urlId": "l-vasiliuk",
+            "calendarId": "85bv85sn8ec6mvlmk04sm6ffrc@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "06.09.2023",
+        "endLessonDate": "27.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "309-5 к."
+        ],
+        "endLessonTime": "15:20",
+        "lessonTypeAbbrev": "ЛР",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "14:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ОАиП",
+        "subjectFullName": "Основы алгоритмизации и программирования",
+        "weekNumber": [
+          2,
+          4
+        ],
+        "employees": [
+          {
+            "id": 500986,
+            "firstName": "Алексей",
+            "middleName": "Александрович",
+            "lastName": "Бутов",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500986",
+            "degree": "кандидат технических наук",
+            "degreeAbbrev": "к.т.н.",
+            "rank": "доцент",
+            "email": "butov@bsuir.by",
+            "urlId": "a-butov",
+            "calendarId": "ekp50r2skqr5i6shrrg3ngkof0@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "06.09.2023",
+        "endLessonDate": "27.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "320-5 к."
+        ],
+        "endLessonTime": "15:20",
+        "lessonTypeAbbrev": "ЛР",
+        "note": null,
+        "numSubgroup": 1,
+        "startLessonTime": "14:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ОАиП",
+        "subjectFullName": "Основы алгоритмизации и программирования",
+        "weekNumber": [
+          1,
+          3
+        ],
+        "employees": [
+          {
+            "id": 500986,
+            "firstName": "Алексей",
+            "middleName": "Александрович",
+            "lastName": "Бутов",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500986",
+            "degree": "кандидат технических наук",
+            "degreeAbbrev": "к.т.н.",
+            "rank": "доцент",
+            "email": "butov@bsuir.by",
+            "urlId": "a-butov",
+            "calendarId": "ekp50r2skqr5i6shrrg3ngkof0@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "13.09.2023",
+        "endLessonDate": "20.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "318-5 к."
+        ],
+        "endLessonTime": "15:20",
+        "lessonTypeAbbrev": "ЛР",
+        "note": null,
+        "numSubgroup": 2,
+        "startLessonTime": "14:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ПриСОД",
+        "subjectFullName": "Прикладные системы обработки данных",
+        "weekNumber": [
+          1,
+          3
+        ],
+        "employees": [
+          {
+            "id": 550452,
+            "firstName": "Кристина",
+            "middleName": "Игоревна",
+            "lastName": "Корбут",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/550452",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "k.korbut@bsuir.by",
+            "urlId": "k-korbut",
+            "calendarId": "ibeta94t9qaq558kfdvcpm8178@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "13.09.2023",
+        "endLessonDate": "20.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "411-4 к."
+        ],
+        "endLessonTime": "17:10",
+        "lessonTypeAbbrev": "ПЗ",
+        "note": "начало в 15.30",
+        "numSubgroup": 0,
+        "startLessonTime": "15:50",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "К.Ч.",
+        "subjectFullName": "Кураторский,информационный час",
+        "weekNumber": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "employees": [
+          {
+            "id": 515625,
+            "firstName": "Никита",
+            "middleName": "Олегович",
+            "lastName": "Петрович",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/515625",
+            "degree": "",
+            "degreeAbbrev": "",
+            "rank": null,
+            "email": "nikita_petrovich@bsuir.by",
+            "urlId": "n-petrovich",
+            "calendarId": "5t1ai1k9dcguduhkafgo2nrtr4@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": null,
+        "startLessonDate": "06.09.2023",
+        "endLessonDate": "27.12.2023",
+        "announcement": false,
+        "split": false
+      },
+      {
+        "auditories": [
+          "223-5 к."
+        ],
+        "endLessonTime": "22:00",
+        "lessonTypeAbbrev": "Экзамен",
+        "note": null,
+        "numSubgroup": 0,
+        "startLessonTime": "16:00",
+        "studentGroups": [
+          {
+            "specialityName": "Информационные системы и технологии",
+            "specialityCode": "6-05-0611-01 01",
+            "numberOfStudents": 31,
+            "name": "378101",
+            "educationDegree": 1
+          }
+        ],
+        "subject": "ОАиП",
+        "subjectFullName": "Основы алгоритмизации и программирования",
+        "weekNumber": [
+          2
+        ],
+        "employees": [
+          {
+            "id": 500995,
+            "firstName": "Наталья",
+            "middleName": "Алексеевна",
+            "lastName": "Кириенко",
+            "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500995",
+            "degree": "кандидат технических наук",
+            "degreeAbbrev": "к.т.н.",
+            "rank": "доцент",
+            "email": null,
+            "urlId": "n-kirienko",
+            "calendarId": "ill3pg5oibslem59786h40sbj4@group.calendar.google.com",
+            "jobPositions": null
+          }
+        ],
+        "dateLesson": "24.01.2024",
+        "startLessonDate": null,
+        "endLessonDate": null,
+        "announcement": false,
+        "split": false
+      }
+    ]
+  },
+  "exams": [
+    {
+      "auditories": [
+        "202-4 к."
+      ],
+      "endLessonTime": "15:00",
+      "lessonTypeAbbrev": "Консультация",
+      "note": null,
+      "numSubgroup": 0,
+      "startLessonTime": "14:00",
+      "studentGroups": [
+        {
+          "specialityName": "Информационные системы и технологии",
+          "specialityCode": "6-05-0611-01 01",
+          "numberOfStudents": 31,
+          "name": "378101",
+          "educationDegree": 1
+        }
+      ],
+      "subject": "ИстБГ",
+      "subjectFullName": "История белорусской государственности",
+      "weekNumber": [
+        3
+      ],
+      "employees": [
+        {
+          "id": 500346,
+          "firstName": "Инна",
+          "middleName": "Валерьевна",
+          "lastName": "Вашкевич",
+          "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500346",
+          "degree": "кандидат исторических наук",
+          "degreeAbbrev": "к.и.н.",
+          "rank": "доцент",
+          "email": "innavashkevich@bsuir.by",
+          "urlId": "i-vashkevich",
+          "calendarId": "47g58rubt6fj3vu9gm6volsr6s@group.calendar.google.com",
+          "jobPositions": null
+        }
+      ],
+      "dateLesson": "05.01.2024",
+      "startLessonDate": null,
+      "endLessonDate": null,
+      "announcement": false,
+      "split": false
+    },
+    {
+      "auditories": [
+        "202-4 к."
+      ],
+      "endLessonTime": "13:00",
+      "lessonTypeAbbrev": "Экзамен",
+      "note": null,
+      "numSubgroup": 0,
+      "startLessonTime": "09:00",
+      "studentGroups": [
+        {
+          "specialityName": "Информационные системы и технологии",
+          "specialityCode": "6-05-0611-01 01",
+          "numberOfStudents": 31,
+          "name": "378101",
+          "educationDegree": 1
+        }
+      ],
+      "subject": "ИстБГ",
+      "subjectFullName": "История белорусской государственности",
+      "weekNumber": [
+        3
+      ],
+      "employees": [
+        {
+          "id": 500346,
+          "firstName": "Инна",
+          "middleName": "Валерьевна",
+          "lastName": "Вашкевич",
+          "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500346",
+          "degree": "кандидат исторических наук",
+          "degreeAbbrev": "к.и.н.",
+          "rank": "доцент",
+          "email": "innavashkevich@bsuir.by",
+          "urlId": "i-vashkevich",
+          "calendarId": "47g58rubt6fj3vu9gm6volsr6s@group.calendar.google.com",
+          "jobPositions": null
+        }
+      ],
+      "dateLesson": "06.01.2024",
+      "startLessonDate": null,
+      "endLessonDate": null,
+      "announcement": false,
+      "split": false
+    },
+    {
+      "auditories": [
+        "213-5 к."
+      ],
+      "endLessonTime": "15:00",
+      "lessonTypeAbbrev": "Консультация",
+      "note": null,
+      "numSubgroup": 0,
+      "startLessonTime": "14:00",
+      "studentGroups": [
+        {
+          "specialityName": "Информационные системы и технологии",
+          "specialityCode": "6-05-0611-01 01",
+          "numberOfStudents": 31,
+          "name": "378101",
+          "educationDegree": 1
+        }
+      ],
+      "subject": "ПриСОД",
+      "subjectFullName": "Прикладные системы обработки данных",
+      "weekNumber": [
+        4
+      ],
+      "employees": [
+        {
+          "id": 505752,
+          "firstName": "Ольга",
+          "middleName": "Михайловна",
+          "lastName": "Раптунович",
+          "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/505752",
+          "degree": "",
+          "degreeAbbrev": "",
+          "rank": null,
+          "email": "raptunovich@bsuir.by",
+          "urlId": "o-raptunovich",
+          "calendarId": "pmr72jtu4cmeh0bnv5b5tldlrk@group.calendar.google.com",
+          "jobPositions": null
+        }
+      ],
+      "dateLesson": "11.01.2024",
+      "startLessonDate": null,
+      "endLessonDate": null,
+      "announcement": false,
+      "split": false
+    },
+    {
+      "auditories": [
+        "213-5 к."
+      ],
+      "endLessonTime": "14:00",
+      "lessonTypeAbbrev": "Экзамен",
+      "note": null,
+      "numSubgroup": 0,
+      "startLessonTime": "09:00",
+      "studentGroups": [
+        {
+          "specialityName": "Информационные системы и технологии",
+          "specialityCode": "6-05-0611-01 01",
+          "numberOfStudents": 31,
+          "name": "378101",
+          "educationDegree": 1
+        }
+      ],
+      "subject": "ПриСОД",
+      "subjectFullName": "Прикладные системы обработки данных",
+      "weekNumber": [
+        4
+      ],
+      "employees": [
+        {
+          "id": 505752,
+          "firstName": "Ольга",
+          "middleName": "Михайловна",
+          "lastName": "Раптунович",
+          "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/505752",
+          "degree": "",
+          "degreeAbbrev": "",
+          "rank": null,
+          "email": "raptunovich@bsuir.by",
+          "urlId": "o-raptunovich",
+          "calendarId": "pmr72jtu4cmeh0bnv5b5tldlrk@group.calendar.google.com",
+          "jobPositions": null
+        }
+      ],
+      "dateLesson": "12.01.2024",
+      "startLessonDate": null,
+      "endLessonDate": null,
+      "announcement": false,
+      "split": false
+    },
+    {
+      "auditories": [
+        "321-4 к."
+      ],
+      "endLessonTime": "15:00",
+      "lessonTypeAbbrev": "Консультация",
+      "note": null,
+      "numSubgroup": 0,
+      "startLessonTime": "14:00",
+      "studentGroups": [
+        {
+          "specialityName": "Информационные системы и технологии",
+          "specialityCode": "6-05-0611-01 01",
+          "numberOfStudents": 31,
+          "name": "378101",
+          "educationDegree": 1
+        }
+      ],
+      "subject": "ЛАиАГ",
+      "subjectFullName": "Линейная алгебра и аналитическая геометрия",
+      "weekNumber": [
+        1
+      ],
+      "employees": [
+        {
+          "id": 500645,
+          "firstName": "Людмила",
+          "middleName": "Павловна",
+          "lastName": "Князева",
+          "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500645",
+          "degree": "кандидат физико-математических наук",
+          "degreeAbbrev": "к.ф.-м.н.",
+          "rank": "доцент",
+          "email": "knyazeva@bsuir.by",
+          "urlId": "l-kniazeva",
+          "calendarId": "t650vqrb8r5g77iqah94i8r04s@group.calendar.google.com",
+          "jobPositions": null
+        }
+      ],
+      "dateLesson": "15.01.2024",
+      "startLessonDate": null,
+      "endLessonDate": null,
+      "announcement": false,
+      "split": false
+    },
+    {
+      "auditories": [
+        "321-4 к."
+      ],
+      "endLessonTime": "14:00",
+      "lessonTypeAbbrev": "Экзамен",
+      "note": null,
+      "numSubgroup": 0,
+      "startLessonTime": "09:00",
+      "studentGroups": [
+        {
+          "specialityName": "Информационные системы и технологии",
+          "specialityCode": "6-05-0611-01 01",
+          "numberOfStudents": 31,
+          "name": "378101",
+          "educationDegree": 1
+        }
+      ],
+      "subject": "ЛАиАГ",
+      "subjectFullName": "Линейная алгебра и аналитическая геометрия",
+      "weekNumber": [
+        1
+      ],
+      "employees": [
+        {
+          "id": 500645,
+          "firstName": "Людмила",
+          "middleName": "Павловна",
+          "lastName": "Князева",
+          "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500645",
+          "degree": "кандидат физико-математических наук",
+          "degreeAbbrev": "к.ф.-м.н.",
+          "rank": "доцент",
+          "email": "knyazeva@bsuir.by",
+          "urlId": "l-kniazeva",
+          "calendarId": "t650vqrb8r5g77iqah94i8r04s@group.calendar.google.com",
+          "jobPositions": null
+        }
+      ],
+      "dateLesson": "16.01.2024",
+      "startLessonDate": null,
+      "endLessonDate": null,
+      "announcement": false,
+      "split": false
+    },
+    {
+      "auditories": [
+        "203-4 к."
+      ],
+      "endLessonTime": "16:00",
+      "lessonTypeAbbrev": "Консультация",
+      "note": null,
+      "numSubgroup": 0,
+      "startLessonTime": "15:00",
+      "studentGroups": [
+        {
+          "specialityName": "Информационные системы и технологии",
+          "specialityCode": "6-05-0611-01 01",
+          "numberOfStudents": 31,
+          "name": "378101",
+          "educationDegree": 1
+        }
+      ],
+      "subject": "ОКПрог",
+      "subjectFullName": "Основы конструирования программ",
+      "weekNumber": [
+        1
+      ],
+      "employees": [
+        {
+          "id": 501001,
+          "firstName": "Николай",
+          "middleName": "Петрович",
+          "lastName": "Мытник",
+          "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/501001",
+          "degree": "",
+          "degreeAbbrev": "",
+          "rank": null,
+          "email": "n.mytnik@bsuir.by",
+          "urlId": "n-mytnik",
+          "calendarId": "mbjg87cb7i42r71gl0u1dcnccc@group.calendar.google.com",
+          "jobPositions": null
+        }
+      ],
+      "dateLesson": "19.01.2024",
+      "startLessonDate": null,
+      "endLessonDate": null,
+      "announcement": false,
+      "split": false
+    },
+    {
+      "auditories": [
+        "203-4 к."
+      ],
+      "endLessonTime": "22:00",
+      "lessonTypeAbbrev": "Экзамен",
+      "note": null,
+      "numSubgroup": 0,
+      "startLessonTime": "16:00",
+      "studentGroups": [
+        {
+          "specialityName": "Информационные системы и технологии",
+          "specialityCode": "6-05-0611-01 01",
+          "numberOfStudents": 31,
+          "name": "378101",
+          "educationDegree": 1
+        }
+      ],
+      "subject": "ОКПрог",
+      "subjectFullName": "Основы конструирования программ",
+      "weekNumber": [
+        1
+      ],
+      "employees": [
+        {
+          "id": 501001,
+          "firstName": "Николай",
+          "middleName": "Петрович",
+          "lastName": "Мытник",
+          "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/501001",
+          "degree": "",
+          "degreeAbbrev": "",
+          "rank": null,
+          "email": "n.mytnik@bsuir.by",
+          "urlId": "n-mytnik",
+          "calendarId": "mbjg87cb7i42r71gl0u1dcnccc@group.calendar.google.com",
+          "jobPositions": null
+        }
+      ],
+      "dateLesson": "20.01.2024",
+      "startLessonDate": null,
+      "endLessonDate": null,
+      "announcement": false,
+      "split": false
+    },
+    {
+      "auditories": [
+        "223-5 к."
+      ],
+      "endLessonTime": "16:00",
+      "lessonTypeAbbrev": "Консультация",
+      "note": null,
+      "numSubgroup": 0,
+      "startLessonTime": "15:00",
+      "studentGroups": [
+        {
+          "specialityName": "Информационные системы и технологии",
+          "specialityCode": "6-05-0611-01 01",
+          "numberOfStudents": 31,
+          "name": "378101",
+          "educationDegree": 1
+        }
+      ],
+      "subject": "ОАиП",
+      "subjectFullName": "Основы алгоритмизации и программирования",
+      "weekNumber": [
+        2
+      ],
+      "employees": [
+        {
+          "id": 500995,
+          "firstName": "Наталья",
+          "middleName": "Алексеевна",
+          "lastName": "Кириенко",
+          "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500995",
+          "degree": "кандидат технических наук",
+          "degreeAbbrev": "к.т.н.",
+          "rank": "доцент",
+          "email": null,
+          "urlId": "n-kirienko",
+          "calendarId": "ill3pg5oibslem59786h40sbj4@group.calendar.google.com",
+          "jobPositions": null
+        }
+      ],
+      "dateLesson": "23.01.2024",
+      "startLessonDate": null,
+      "endLessonDate": null,
+      "announcement": false,
+      "split": false
+    },
+    {
+      "auditories": [
+        "223-5 к."
+      ],
+      "endLessonTime": "22:00",
+      "lessonTypeAbbrev": "Экзамен",
+      "note": null,
+      "numSubgroup": 0,
+      "startLessonTime": "16:00",
+      "studentGroups": [
+        {
+          "specialityName": "Информационные системы и технологии",
+          "specialityCode": "6-05-0611-01 01",
+          "numberOfStudents": 31,
+          "name": "378101",
+          "educationDegree": 1
+        }
+      ],
+      "subject": "ОАиП",
+      "subjectFullName": "Основы алгоритмизации и программирования",
+      "weekNumber": [
+        2
+      ],
+      "employees": [
+        {
+          "id": 500995,
+          "firstName": "Наталья",
+          "middleName": "Алексеевна",
+          "lastName": "Кириенко",
+          "photoLink": "https://iis.bsuir.by/api/v1/employees/photo/500995",
+          "degree": "кандидат технических наук",
+          "degreeAbbrev": "к.т.н.",
+          "rank": "доцент",
+          "email": null,
+          "urlId": "n-kirienko",
+          "calendarId": "ill3pg5oibslem59786h40sbj4@group.calendar.google.com",
+          "jobPositions": null
+        }
+      ],
+      "dateLesson": "24.01.2024",
+      "startLessonDate": null,
+      "endLessonDate": null,
+      "announcement": false,
+      "split": false
+    }
+  ]
+}

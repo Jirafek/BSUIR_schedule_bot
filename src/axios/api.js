@@ -9,6 +9,8 @@ export const updateChatId = (newChatId) => {
     chatId = newChatId;
 }
 
+const ERROR_STATUS_REFRESH = [401, 403];
+
 let isRetried = false;
 
 export const api = axios.create({
@@ -54,7 +56,7 @@ api.interceptors.response.use(
         console.log('resp', error.response, error.response.status)
 
         if (
-            error.response && error.response.status >= 401 &&
+            error.response && ERROR_STATUS_REFRESH.includes(error.response.status) &&
             !isRetried
         ) {
             isRetried = true;

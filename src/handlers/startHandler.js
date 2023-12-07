@@ -1,7 +1,7 @@
 import {welcomeMessage, welcomeBackMessage, welcomeBackMessageNoLogin} from '../utils/defaultMessages.js';
 import {clearChat, deleteMessage, sendMessage} from '../utils/message.js';
 import {findUserByChatId} from "../sql/defaultSQLCommands.js";
-import {gradesBtn, reminderBtn, scheduleBtn} from "../utils/defaultButtons.js";
+import {gradesBtn, omissionsBtn, reminderBtn, scheduleBtn} from "../utils/defaultButtons.js";
 
 export const startHandler = async (bot, msg) => {
     const chatId = msg.chat.id;
@@ -21,6 +21,14 @@ export const startHandler = async (bot, msg) => {
         },
     };
 
+    const sendRocket = async () => {
+        await bot.sendMessage(chatId, '🚀');
+    };
+
+    const promises = Array.from({length: 5}, () => sendRocket());
+
+    await Promise.all(promises);
+
     if (user) {
 
         let enterButtonsMarkup = {
@@ -35,7 +43,7 @@ export const startHandler = async (bot, msg) => {
             )
 
             enterButtonsMarkup.reply_markup.inline_keyboard.push(
-                [gradesBtn]
+                [gradesBtn, omissionsBtn]
             )
         } else {
             enterButtonsMarkup.reply_markup.inline_keyboard.push(
@@ -47,14 +55,6 @@ export const startHandler = async (bot, msg) => {
 
         return;
     }
-
-    const sendRocket = async () => {
-        await bot.sendMessage(chatId, '🚀');
-    };
-
-    const promises = Array.from({length: 5}, () => sendRocket());
-
-    await Promise.all(promises);
 
     await sendMessage(bot, chatId, welcomeMessage, {parse_mode: 'Markdown', ...loginButtonsMarkup});
 };

@@ -2,7 +2,7 @@ import {loadingFrames, waiting} from "../../../utils/waiting.js";
 import {addUser, updateGroup, updateToken} from "../../../sql/defaultSQLCommands.js";
 import {api} from "../../../axios/api.js";
 import cookie from "cookie";
-import {gradesBtn, reminderBtn, scheduleBtn} from "../../../utils/defaultButtons.js";
+import {gradesBtn, omissionsBtn, reminderBtn, scheduleBtn} from "../../../utils/defaultButtons.js";
 import {somethingWentWrong, successLogin, wrongPasswordMessage} from "../../../utils/defaultMessages.js";
 import {sendMessage} from "../../../utils/message.js";
 
@@ -20,10 +20,7 @@ export async function auth(bot, chatId, username, password) {
 
     try {
         await addUser(chatId, username, password);
-
     } catch (error) {
-        console.log('Cannot add a new user');
-
         clearInterval(loadingInterval);
         await bot.deleteMessage(chatId, loadingMessage.message_id);
 
@@ -45,7 +42,7 @@ export async function auth(bot, chatId, username, password) {
             password: password,
         }, {
             headers: {
-                'x-chat-id': chatId,
+                xChatId: chatId,
             }
         });
 
@@ -55,7 +52,7 @@ export async function auth(bot, chatId, username, password) {
 
             const tokenValue = parsedCookie.JSESSIONID;
 
-            updateToken(chatId, tokenValue);
+            await updateToken(chatId, tokenValue);
             updateGroup(chatId, +response.data.group);
 
             const studentName = response.data.fio.split(' ')[1];
@@ -65,7 +62,7 @@ export async function auth(bot, chatId, username, password) {
                 reply_markup: {
                     inline_keyboard: [
                         [scheduleBtn, reminderBtn],
-                        [gradesBtn,],
+                        [gradesBtn, omissionsBtn],
                     ],
                 },
             };
@@ -81,8 +78,6 @@ export async function auth(bot, chatId, username, password) {
         }
 
     } catch (error) {
-        console.info(error);
-
         await sendMessage(bot, chatId, wrongPasswordMessage, {parse_mode: 'Markdown', ...ReloginButtonsMarkup});
     } finally {
         clearInterval(loadingInterval);

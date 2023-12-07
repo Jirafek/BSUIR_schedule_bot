@@ -34,7 +34,7 @@ export const getDecryptedPassword = async (chatId) => {
     };
 }
 
-const deleteUserByChatId = (chatId) => {
+export const deleteUserByChatId = (chatId) => {
     return new Promise((resolve, reject) => {
         const stmt = db.prepare('DELETE FROM users WHERE chatId = ?');
         stmt.run(chatId, (err) => {
@@ -83,10 +83,18 @@ export const addUser = async (chatId, username, plainPassword) => {
 }
 
 export const updateToken = (chatId, newToken) => {
-    const stmt = db.prepare('UPDATE users SET token = ? WHERE chatId = ?');
-    stmt.run(newToken, chatId);
-    stmt.finalize();
-}
+    return new Promise((resolve, reject) => {
+        const stmt = db.prepare('UPDATE users SET token = ? WHERE chatId = ?');
+        stmt.run(newToken, chatId, function (err) {
+            stmt.finalize();
+            if (err) {
+                reject(err);
+            } else {
+                resolve();
+            }
+        });
+    });
+};
 
 export const updateGroup = (chatId, newGroup) => {
     const stmt = db.prepare('UPDATE users SET userGroup = ? WHERE chatId = ?');

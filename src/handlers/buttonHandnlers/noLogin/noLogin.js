@@ -28,7 +28,6 @@ export const noLogin = async (bot, chatId, message) => {
         try {
             await addNoPasswordUser(message.chat.id, +groupNumber);
         } catch (e) {
-            console.log('Cannot create new no-password user');
             return {success: false, message: 'Error adding a new user.'}
         }
 

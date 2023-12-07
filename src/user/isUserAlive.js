@@ -2,10 +2,12 @@ import {findUserByChatId} from "../sql/defaultSQLCommands.js";
 import {dontHaveAccess, dontHaveAccessButton} from "../utils/defaultMessages.js";
 import {sendMessage} from "../utils/message.js";
 
-export const isUserAlive = async (bot, chatId, isButtonCLick) => {
+export const isUserAlive = async (bot, chatId, isButtonCLick, needToCheckToken = false) => {
     const user = await findUserByChatId(chatId);
 
-    if (!user) {
+    const checker = needToCheckToken ? user && user.token : user;
+
+    if (!checker) {
         const ReloginButtonsMarkup = {
             reply_markup: {
                 inline_keyboard: [

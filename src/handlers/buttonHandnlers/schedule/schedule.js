@@ -1,12 +1,12 @@
 import {loadingFrames, waiting} from "../../../utils/waiting.js";
 import {
     noLoginMessage,
-    somethingWentWrong,
 } from "../../../utils/defaultMessages.js";
 import {isUserAlive} from "../../../user/isUserAlive.js";
 import {api} from "../../../axios/api.js";
 import {noLogin} from "../noLogin/noLogin.js";
-import {sendMessage} from "../../../utils/message.js";
+import {deleteMessage, sendMessage} from "../../../utils/message.js";
+import {somethingWentWrongError} from "../../../errors/somethingWentWrongError.js";
 
 export const schedule = async (bot, chatId) => {
 
@@ -23,7 +23,7 @@ export const schedule = async (bot, chatId) => {
 
     if (!user) {
         clearInterval(loadingInterval);
-        await bot.deleteMessage(chatId, loadingMessage.message_id);
+        await deleteMessage(bot, chatId, loadingMessage.message_id);
 
         return;
     }
@@ -41,11 +41,7 @@ export const schedule = async (bot, chatId) => {
 
             // here need to parse schedule
         } else {
-            const errorMessage = await sendMessage(bot, chatId, somethingWentWrong, {parse_mode: 'Markdown'});
-
-            setTimeout(async () => {
-                await bot.deleteMessage(chatId, errorMessage.message_id);
-            }, 5000)
+            await somethingWentWrongError(bot, chatId);
         }
 
     } catch (error) {
@@ -54,14 +50,10 @@ export const schedule = async (bot, chatId) => {
         if (error && error.status === 404) {
             await noLogin(bot, chatId, noLoginMessage);
         } else {
-            const errorMessage = await sendMessage(bot, chatId, somethingWentWrong, {parse_mode: 'Markdown'});
-
-            setTimeout(async () => {
-                await bot.deleteMessage(chatId, errorMessage.message_id);
-            }, 5000)
+            await somethingWentWrongError(bot, chatId);
         }
     } finally {
         clearInterval(loadingInterval);
-        await bot.deleteMessage(chatId, loadingMessage.message_id);
+        await deleteMessage(bot, chatId, loadingMessage.message_id);
     }
 }

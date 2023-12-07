@@ -1,100 +1,53 @@
 import axios from "axios";
+import {refreshToken} from "./refreshToken.js";
 
-import {findUserByChatId, getDecryptedPassword, updateToken} from '../sql/defaultSQLCommands.js';
-import cookie from "cookie";
+let currentToken = '';
 
-let chatId = 0;
-
-export const updateChatId = (newChatId) => {
-    chatId = newChatId;
+export const updateCurrentToken = (newToken) => {
+    currentToken = newToken;
 }
 
-const ERROR_STATUS_REFRESH = [401, 403];
-
-let isRetried = false;
 
 export const api = axios.create({
     baseURL: 'https://iis.bsuir.by/api/v1',
     headers: {
-        'access-control-allow-origin': '*'
+        'access-control-allow-origin': '*',
+        'Content-Type': 'application/json'
     }
 });
 
-api.interceptors.request.use(
-    async originalConfig => {
-        let token = '';
-        const config = {...originalConfig};
-        if (config && config.headers) {
-            const chatId = parseInt(config.headers['x-chat-id'], 10);
+api.interceptors.request.use(async config => {
 
-            if (chatId) {
-                updateChatId(chatId);
-                const user = await findUserByChatId(chatId)
+    if (currentToken) {
+        config.headers.Cookie = `JSESSIONID=${currentToken}`;
+    }
 
-                if (user) {
-                    token = user.token ?? '';
-                }
-            }
-            config.headers['Cookie'] = `JSESSIONID=${token}`;
-
-            return config;
-        }
-
-
-        return originalConfig;
-    },
-    error => {
-        return Promise.reject(error);
-    },
-);
+    return config;
+});
 
 api.interceptors.response.use(
     response => response,
     async error => {
-        const originalRequest = error.config;
+        const status = error.response ? error.response.status : null;
+        const chatId = error.config ? (error.config.headers.xChatId || null) : null;
 
-        console.log('resp', error.response, error.response.status)
-
-        if (
-            error.response && ERROR_STATUS_REFRESH.includes(error.response.status) &&
-            !isRetried
-        ) {
-            isRetried = true;
-
-            try {
-
-                let userData = {
-                    username: null,
-                    password: null,
-                };
-
-                if (chatId) {
-                    userData = await getDecryptedPassword(chatId)
-                }
-
-
-                const response = await api.post('/auth/login', {
-                    ...userData
-                }, {
-                    headers: {
-                        'x-chat-id': chatId,
-                    }
-                });
-
-                const setCookieHeader = response.config.headers['set-cookie'];
-                const parsedCookie = cookie.parse(setCookieHeader.join('; '));
-
-                const tokenValue = parsedCookie.JSESSIONID;
-
-                updateToken(chatId, tokenValue);
-
-                return api.request(originalRequest);
-
-            } catch (refreshError) {
-                return Promise.reject(error);
+        if (status === 401 || status === 403) {
+            if (error.config.headers && error.config.headers['NO_RETRY_HEADER']) {
+                return Promise.reject(error)
             }
-        }
 
+            error.config.headers['NO_RETRY_HEADER'] = 'true'
+
+            const refreshData = await refreshToken(chatId);
+
+            if (refreshData.success) {
+                updateCurrentToken(refreshData.token);
+
+                error.config.headers.Cookie = refreshData.token;
+            }
+
+            return api(error.config);
+        }
         return Promise.reject(error);
-    },
+    }
 );

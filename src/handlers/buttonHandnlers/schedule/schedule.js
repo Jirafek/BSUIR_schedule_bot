@@ -7,8 +7,9 @@ import {api} from "../../../axios/api.js";
 import {noLogin} from "../noLogin/noLogin.js";
 import {deleteMessage, sendMessage} from "../../../utils/message.js";
 import {somethingWentWrongError} from "../../../errors/somethingWentWrongError.js";
+import {getCurrentWeek} from "./weeks/currentWeek.js";
 
-export const schedule = async (bot, chatId) => {
+export const schedule = async (bot, chatId, subGroup = null) => {
 
     let currentFrameIndex = 1;
 
@@ -37,9 +38,9 @@ export const schedule = async (bot, chatId) => {
 
         if (response && response.data) {
 
-            console.log(response.data);
+            const currentWeek = getCurrentWeek(response.data.startDate);
 
-            // here need to parse schedule
+
         } else {
             await somethingWentWrongError(bot, chatId);
         }

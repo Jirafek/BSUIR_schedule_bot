@@ -31,7 +31,7 @@ export const startHandler = async (bot, msg) => {
 
     if (user) {
 
-        let enterButtonsMarkup = {
+        const enterButtonsMarkup = {
             reply_markup: {
                 inline_keyboard: []
             }

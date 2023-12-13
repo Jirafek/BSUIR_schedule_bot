@@ -4,6 +4,7 @@ import {schedule} from './buttonHandnlers/schedule/schedule.js';
 import {deleteMessage} from '../utils/message.js';
 import {noLoginMessage} from '../utils/defaultMessages.js';
 import {omissions} from "./buttonHandnlers/omissions/omissions.js";
+import {subGroupChoice} from "./buttonHandnlers/schedule/subGroupChoice.js";
 
 export const callBackHandler = async (bot, query) => {
     const {data, message} = query;
@@ -20,12 +21,19 @@ export const callBackHandler = async (bot, query) => {
 
     } else if (data === 'schedule') {
 
-        await schedule(bot, message.chat.id);
+        await subGroupChoice(bot, message.chat.id);
 
     } else if (data === 'omissions') {
 
         await omissions(bot, message.chat.id);
 
+    } else if (data.startsWith('subGroup')) {
+        let subGroup = data.split('_').pop();
+
+        if (isNaN(Number(subGroup))) subGroup = null;
+        else subGroup = +subGroup
+
+        await schedule(bot, message.chat.id, subGroup);
     }
 
 }

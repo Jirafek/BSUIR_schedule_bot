@@ -1,23 +1,22 @@
-import {deleteMessage, sendMessage} from "../../../utils/message.js";
 import {loadingFrames, waiting} from "../../../utils/waiting.js";
+import {deleteMessage, sendMessage} from "../../../utils/message.js";
 import {isUserAlive} from "../../../user/isUserAlive.js";
+import {menuBtn} from "../../../utils/defaultButtons.js";
 import {api, updateCurrentToken} from "../../../axios/api.js";
 import {somethingWentWrongError} from "../../../errors/somethingWentWrongError.js";
 import {onRefreshFailed} from "../../../axios/refreshToken.js";
-import {monthEmojis} from "../../../utils/defaultMessages.js";
-import {menuBtn} from "../../../utils/defaultButtons.js";
+import {CollectMessage} from "./collectMessage.js";
 
-export const omissions = async (bot, chatId, isRetryed = false) => {
+export const grades = async (bot, chatId, isRetryed = false) => {
 
-    let currentFrameIndex = 1;
+        let currentFrameIndex = 1;
 
-    const loadingMessage = await sendMessage(bot, chatId, 'Загрузка   👉');
+        const loadingMessage = await sendMessage(bot, chatId, 'Загрузка   👉');
 
-    const loadingInterval = setInterval(() => {
-        waiting(bot, chatId, loadingMessage, currentFrameIndex);
-        currentFrameIndex = (currentFrameIndex + 1) % loadingFrames.length;
-    }, 500);
-
+        const loadingInterval = setInterval(() => {
+            waiting(bot, chatId, loadingMessage, currentFrameIndex);
+            currentFrameIndex = (currentFrameIndex + 1) % loadingFrames.length;
+        }, 500);
 
     const user = await isUserAlive(bot, chatId, true, true);
 
@@ -28,7 +27,7 @@ export const omissions = async (bot, chatId, isRetryed = false) => {
         return;
     }
 
-    const omissionsButtonsMarkup = {
+    const gradesButtonsMarkup = {
         reply_markup: {
             inline_keyboard: [
                 [menuBtn],
@@ -39,25 +38,16 @@ export const omissions = async (bot, chatId, isRetryed = false) => {
     try {
         updateCurrentToken(user.token);
 
-        const response = await api.get(`/omission-count-by-student-for-semester`, {
+        const response = await api.get(`/grade-book`, {
             headers: {
                 xChatId: chatId,
             }
         });
 
         if (response && response.data) {
-            let omissionsMessage = response.data.length !== 0 ? `*Ваши текущие пропуски:* \n\n` : `Кажется у вас совсем нету пропусков! 🎉\n`;
-            let totalHours = 0;
+            const gradesMessage = CollectMessage(response.data);
 
-            response.data.forEach(omission => {
-                omissionsMessage += `${monthEmojis[omission.month]} _${omission.month}_: ${omission.omissionCount}ч.\n`;
-                totalHours += omission.omissionCount;
-            });
-
-            omissionsMessage += `\n*Всего*: ${totalHours}ч.`;
-
-            await sendMessage(bot, chatId, omissionsMessage, {parse_mode: 'Markdown', ...omissionsButtonsMarkup});
-
+            await sendMessage(bot, chatId, gradesMessage, {parse_mode: 'Markdown', ...gradesButtonsMarkup});
 
         } else if (!response) {
             await somethingWentWrongError(bot, chatId);
@@ -72,7 +62,7 @@ export const omissions = async (bot, chatId, isRetryed = false) => {
 
         if (error.response && [401, 403].includes(error.response.status)) {
             if (!isRetryed) {
-                await omissions(bot, chatId, true);
+                await grades(bot, chatId, true);
             } else {
                 await onRefreshFailed(bot, chatId);
             }

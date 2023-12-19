@@ -5,6 +5,7 @@ import {api, updateCurrentToken} from "../../../axios/api.js";
 import {somethingWentWrongError} from "../../../errors/somethingWentWrongError.js";
 import {onRefreshFailed} from "../../../axios/refreshToken.js";
 import {monthEmojis} from "../../../utils/defaultMessages.js";
+import {menuBtn} from "../../../utils/defaultButtons.js";
 
 export const omissions = async (bot, chatId, isRetryed = false) => {
 
@@ -27,6 +28,14 @@ export const omissions = async (bot, chatId, isRetryed = false) => {
         return;
     }
 
+    const omissionsButtonsMarkup = {
+        reply_markup: {
+            inline_keyboard: [
+                [menuBtn],
+            ]
+        }
+    }
+
     try {
         updateCurrentToken(user.token);
 
@@ -47,7 +56,7 @@ export const omissions = async (bot, chatId, isRetryed = false) => {
 
             omissionsMessage += `\n*Всего*: ${totalHours}ч.`;
 
-            await sendMessage(bot, chatId, omissionsMessage, {parse_mode: 'Markdown'});
+            await sendMessage(bot, chatId, omissionsMessage, {parse_mode: 'Markdown', ...omissionsButtonsMarkup});
 
 
         } else if (!response) {

@@ -1,7 +1,7 @@
 import {welcomeMessage, welcomeBackMessage, welcomeBackMessageNoLogin} from '../utils/defaultMessages.js';
 import {clearChat, deleteMessage, sendMessage} from '../utils/message.js';
 import {findUserByChatId} from "../sql/defaultSQLCommands.js";
-import {gradesBtn, omissionsBtn, reminderBtn, scheduleBtn} from "../utils/defaultButtons.js";
+import {gradesBtn, loginButtonsMarkup, omissionsBtn, reminderBtn, scheduleBtn} from "../utils/defaultButtons.js";
 
 export const startHandler = async (bot, msg) => {
     const chatId = msg.chat.id;
@@ -12,14 +12,6 @@ export const startHandler = async (bot, msg) => {
     await clearChat(bot, chatId);
 
     const user = await findUserByChatId(chatId);
-
-    const loginButtonsMarkup = {
-        reply_markup: {
-            inline_keyboard: [
-                [{text: 'Да ✅', callback_data: 'login_yes'}, {text: 'Нет ❌', callback_data: 'login_no'}],
-            ],
-        },
-    };
 
     const sendRocket = async () => {
         await bot.sendMessage(chatId, '🚀');

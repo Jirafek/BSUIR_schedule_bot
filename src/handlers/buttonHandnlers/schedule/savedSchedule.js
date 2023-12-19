@@ -1,7 +1,7 @@
 
 const UPDATE_INTERVAL = 2 * 60 * 60 * 1000;
 
-export let savedSchedule = {
+let savedSchedule = {
     schedule: null,
     updatedAt: null,
 }
@@ -12,6 +12,8 @@ export const updateSchedule = (schedule) => {
         updatedAt: Date.now(),
     }
 }
+
+export const getSavedSchedule = () => savedSchedule.schedule;
 
 export const needToUpdateSchedule = () => {
     const currentStamp = Date.now();

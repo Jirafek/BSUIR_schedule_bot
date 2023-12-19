@@ -7,11 +7,14 @@ import {api} from "../../../axios/api.js";
 import {noLogin} from "../noLogin/noLogin.js";
 import {deleteMessage, sendMessage} from "../../../utils/message.js";
 import {somethingWentWrongError} from "../../../errors/somethingWentWrongError.js";
-import {getCurrentWeek} from "./weeks/currentWeek.js";
+import {updateSchedule} from "./savedSchedule.js";
+import {collectMessage} from "./collectMessage.js";
 
-export const schedule = async (bot, chatId, subGroup = null) => {
+export const schedule = async (bot, chatId, date = new Date(), subGroup = null, messageId = null) => {
 
     let currentFrameIndex = 1;
+
+    const user = await isUserAlive(bot, chatId, true);
 
     const loadingMessage = await sendMessage(bot, chatId, 'Загрузка   👉');
 
@@ -19,8 +22,6 @@ export const schedule = async (bot, chatId, subGroup = null) => {
         waiting(bot, chatId, loadingMessage, currentFrameIndex);
         currentFrameIndex = (currentFrameIndex + 1) % loadingFrames.length;
     }, 500);
-
-    const user = await isUserAlive(bot, chatId, true);
 
     if (!user) {
         clearInterval(loadingInterval);
@@ -38,7 +39,9 @@ export const schedule = async (bot, chatId, subGroup = null) => {
 
         if (response && response.data) {
 
-            const currentWeek = getCurrentWeek(response.data.startDate);
+            updateSchedule(response.data);
+
+            await collectMessage(bot, chatId, response.data, date, subGroup, messageId);
 
 
         } else {

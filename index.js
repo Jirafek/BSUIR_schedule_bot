@@ -11,6 +11,7 @@ sqlite3.verbose();
 
 import {startHandler} from './src/handlers/startHandler.js';
 import {callBackHandler} from './src/handlers/callBackHandler.js';
+import {menu} from "./src/handlers/menu.js";
 
 const telegramBotToken = process.env.TELEGRAM_BOT_API;
 const port = process.env.PORT;
@@ -39,6 +40,7 @@ app.use(cors());
 const bot = new TelegramBot(telegramBotToken, {polling: true});
 
 bot.onText(/\/start/, async (msg) => await startHandler(bot, msg));
+bot.onText(/\/menu/, async (msg) => await menu(bot, msg));
 
 bot.on('callback_query', async (query) => await callBackHandler(bot, query));
 

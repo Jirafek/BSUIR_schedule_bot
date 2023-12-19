@@ -37,7 +37,7 @@ export const CollectMessage = (response) => {
         gradesMessage += `\n`;
     }
 
-    gradesMessage += `\n\n*КТ:*\n\n`;
+    gradesMessage += `\n\n*Контрольные точки:*\n\n`;
 
     for (const controlPoint in controlPoints) {
         let sum = controlPoints[controlPoint].reduce(function(acc, cur) {

@@ -1,5 +1,6 @@
 const botCommands = [
-    '/start'
+    '/start',
+    '/menu'
 ];
 
 export default botCommands;

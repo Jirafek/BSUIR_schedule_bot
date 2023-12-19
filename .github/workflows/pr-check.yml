@@ -1,19 +1,39 @@
-name: PR Name Check
+name: 'Validate PR title'
 
 on:
   pull_request_target:
-    branches:
-      - dev
-
+    types:
+      - opened
+      - edited
+      - synchronize
+ 
 jobs:
-  pr-name-check:
+  main:
+    name: Validate PR title
     runs-on: ubuntu-latest
-
     steps:
-    - name: Check PR name
-      run: |
-        pr_name=$(echo "${{ github.event.pull_request.title }}" | tr '[:upper:]' '[:lower:]')
-        if [[ ! "${pr_name}" =~ ^(feat|fix|del|refactor|docs): [A-Z][a-z]+ ]]; then
-          echo "Invalid PR name. Please follow the pattern: (feat|fix|del|refactor|docs): [A-Z][a-z]+"
-          exit 1
-        fi
+      - uses: amannn/action-semantic-pull-request@v3.4.6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          # Configure which types are allowed.
+          # Default: https://github.com/commitizen/conventional-commit-types
+          types: |
+            breaking
+            chore
+            ci
+            docs
+            feat
+            fix
+            refactor
+            security
+            style
+            test
+          requireScope: false
+          subjectPattern: ^[A-Z][a-z\s]+$
+          subjectPatternError: |
+            The subject "{subject}" found in the pull request title "{title}"
+            didn't match the configured pattern. Please ensure that the subject
+            doesn't start with an uppercase character.
+          wip: true
+          validateSingleCommit: false

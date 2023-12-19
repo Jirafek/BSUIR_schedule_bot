@@ -9,11 +9,12 @@ import botEditedCommands from "../utils/botEditedCommands.js";
 import {getSavedSchedule, needToUpdateSchedule} from "./buttonHandnlers/schedule/savedSchedule.js";
 import {collectMessage} from "./buttonHandnlers/schedule/collectMessage.js";
 import {menu} from "./menu.js";
+import {grades} from "./buttonHandnlers/grades/grades.js";
 
 export const callBackHandler = async (bot, query) => {
     const {data, message} = query;
 
-    if (!botEditedCommands.includes(data.split('_')[0])) {
+    if (!botEditedCommands.includes(data.split('_')[0]) && data !== 'reminders') {
         await deleteMessage(bot, message.chat.id, message.message_id);
     }
 
@@ -67,6 +68,16 @@ export const callBackHandler = async (bot, query) => {
 
     } else if (data === 'menu') {
         await menu(bot, null, message.chat.id);
+    } else if (data === 'grades') {
+        await grades(bot, message.chat.id);
+    } else if (data === 'reminders') {
+        try {
+            await bot.answerCallbackQuery(query.id, {
+                text: 'В разработке',
+            });
+        } catch (error) {
+            console.log(error.response.statusCode);
+        }
     }
 
 }

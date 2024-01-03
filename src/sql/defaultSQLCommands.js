@@ -136,3 +136,17 @@ export const addNoPasswordUser = async (chatId, userGroup) => {
     }
 }
 
+export const setUserGroupToNull = (chatId) => {
+    return new Promise((resolve, reject) => {
+        const stmt = db.prepare('UPDATE users SET userGroup = null WHERE chatId = ?');
+        stmt.run(chatId, function (err) {
+            stmt.finalize();
+            if (err) {
+                reject(err);
+            } else {
+                resolve();
+            }
+        });
+    });
+};
+

@@ -1,6 +1,6 @@
 import {loadingFrames, waiting} from "../../../utils/waiting.js";
 import {
-    noLoginMessage,
+    noLoginNotFoundGroup,
 } from "../../../utils/defaultMessages.js";
 import {isUserAlive} from "../../../user/isUserAlive.js";
 import {api} from "../../../axios/api.js";
@@ -9,6 +9,7 @@ import {deleteMessage, sendMessage} from "../../../utils/message.js";
 import {somethingWentWrongError} from "../../../errors/somethingWentWrongError.js";
 import {updateSchedule} from "./savedSchedule.js";
 import {collectMessage} from "./collectMessage.js";
+import {setUserGroupToNull} from "../../../sql/defaultSQLCommands.js";
 
 export const schedule = async (bot, chatId, date = new Date(), subGroup = null, messageId = null) => {
 
@@ -49,13 +50,13 @@ export const schedule = async (bot, chatId, date = new Date(), subGroup = null, 
         }
 
     } catch (error) {
-        console.info(error);
-
-        if (error && error.status === 404) {
-            await noLogin(bot, chatId, noLoginMessage);
+        if (error && error.response && error.response.status === 404) {
+            await noLogin(bot, chatId, noLoginNotFoundGroup(user.userGroup));
         } else {
             await somethingWentWrongError(bot, chatId);
         }
+
+        await setUserGroupToNull(chatId);
     } finally {
         clearInterval(loadingInterval);
         await deleteMessage(bot, chatId, loadingMessage.message_id);

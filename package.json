@@ -1,7 +1,7 @@
 {
   "name": "bsuir-schedule-bot",
   "version": "1.0.0",
-  "description": "A Telegram bot for convenient access to schedules and more at BGUIR. Safely stores user credentials and provides an open-source solution for easy customization. Export grades to Excel format, receive real-time schedule updates, and enhance your university experience.",
+  "description": "A Telegram bot for convenient access to schedules and more at BGUIR. Safely stores user credentials and provides an open-source solution for easy customization. Export grades, receive real-time schedule updates, and enhance your university experience.",
   "main": "index.js",
   "type": "module",
   "scripts": {

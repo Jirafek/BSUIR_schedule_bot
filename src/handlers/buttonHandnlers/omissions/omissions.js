@@ -50,7 +50,7 @@ export const omissions = async (bot, chatId, isRetryed = false) => {
             let totalHours = 0;
 
             response.data.forEach(omission => {
-                omissionsMessage += `${monthEmojis[omission.month]} _${omission.month}_: ${omission.omissionCount}ч.\n`;
+                omissionsMessage += `${monthEmojis[omission.month] ?? '🎶'} _${omission.month}_: ${omission.omissionCount}ч.\n`;
                 totalHours += omission.omissionCount;
             });
 

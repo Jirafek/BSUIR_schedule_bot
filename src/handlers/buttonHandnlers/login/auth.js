@@ -2,7 +2,7 @@ import {loadingFrames, waiting} from "../../../utils/waiting.js";
 import {addUser, updateGroup, updateToken} from "../../../sql/defaultSQLCommands.js";
 import {api} from "../../../axios/api.js";
 import cookie from "cookie";
-import {gradesBtn, omissionsBtn, reminderBtn, scheduleBtn} from "../../../utils/defaultButtons.js";
+import {gradesBtn, menuBtn, omissionsBtn, reminderBtn, scheduleBtn} from "../../../utils/defaultButtons.js";
 import {somethingWentWrong, successLogin, wrongPasswordMessage} from "../../../utils/defaultMessages.js";
 import {sendMessage} from "../../../utils/message.js";
 
@@ -18,19 +18,10 @@ export async function auth(bot, chatId, username, password) {
     }, 500);
 
 
-    try {
-        await addUser(chatId, username, password);
-    } catch (error) {
-        clearInterval(loadingInterval);
-        await bot.deleteMessage(chatId, loadingMessage.message_id);
-
-        return {success: false, message: 'Error adding a new user.'}
-    }
-
     const ReloginButtonsMarkup = {
         reply_markup: {
             inline_keyboard: [
-                [{text: 'Повторить', callback_data: 'login_yes'}, {text: 'Выход', callback_data: 'login_no'}],
+                [{text: 'Повторить', callback_data: 'login_yes'}, menuBtn],
             ],
         },
     };
@@ -43,10 +34,17 @@ export async function auth(bot, chatId, username, password) {
         }, {
             headers: {
                 xChatId: chatId,
-            }
+            },
+            needrefresh: false,
         });
 
         if (response && response.data) {
+            try {
+                await addUser(chatId, username, password);
+            } catch (error) {
+                console.log('cannot add new user')
+            }
+
             const setCookieHeader = response.headers['set-cookie'];
             const parsedCookie = cookie.parse(setCookieHeader.join('; '));
 

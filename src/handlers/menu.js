@@ -35,7 +35,7 @@ export const menu = async (bot, msg, chatId = null) => {
             menuButtonsMarkup.reply_markup.inline_keyboard.push(
                 [gradesBtn, omissionsBtn]
             )
-        } else {
+        } else if (user.userGroup) {
             menuButtonsMarkup.reply_markup.inline_keyboard.push(
                 [{text: 'Войти ✅', callback_data: 'login_yes'}]
             )
@@ -43,6 +43,11 @@ export const menu = async (bot, msg, chatId = null) => {
             menuButtonsMarkup.reply_markup.inline_keyboard.push(
                 [scheduleBtn]
             )
+        } else {
+
+            await sendMessage(bot, chatId, welcomeMessage, {parse_mode: 'Markdown', ...loginButtonsMarkup});
+
+            return;
         }
 
         await sendMessage(bot, chatId, user.token ? menuWelcomeMessage : menuWelcomeBackMessageNoLogin(user.userGroup), {parse_mode: 'Markdown', ...menuButtonsMarkup})

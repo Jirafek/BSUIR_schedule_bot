@@ -31,7 +31,7 @@ api.interceptors.response.use(
         const status = error.response ? error.response.status : null;
         const chatId = error.config ? (error.config.headers.xChatId || null) : null;
 
-        if (status === 401 || status === 403) {
+        if ((status === 401 || status === 403) && error.config.needrefresh !== false) {
             if (error.config.headers && error.config.headers['NO_RETRY_HEADER']) {
                 return Promise.reject(error)
             }

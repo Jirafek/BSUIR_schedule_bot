@@ -53,6 +53,8 @@ const lessonEmojis = {
     'ЛК': '🟢',
     'ЛР': '🟡',
     'ПЗ': '🔴',
+    'Консультация': '⚪️',
+    'Экзамен': '🟣',
 };
 
 export const collectMessage = async (bot, chatId, scheduleResponse, date, subGroup = null, messageId = null) => {
